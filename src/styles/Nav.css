@@ -1,0 +1,40 @@
+.Nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5265c4;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px lightseagreen;
+}
+.navbar-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-lists li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.navbar-lists li NavLink {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: beige;
+  transition: 0.3s ease-in-out;
+}
+.navbar-lists li NavLink:hover,
+.navbar-lists li NavLink.active::after {
+  color: aqua;
+}
+.navbar-lists li NavLink:hover::after,
+.navbar-lists li NavLink.active ::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #17ef97;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
