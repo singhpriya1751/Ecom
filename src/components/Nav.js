@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import styles from "styled-components";
-import { NavLink, Outlet } from "react-router-dom";
-import { FiShoppingCart } from "react-icons/fi";
-import { CgMenu, CgClose } from "react-icons/cg";
+import React, { useState } from 'react';
+import styles from 'styled-components';
+import { NavLink, Outlet } from 'react-router-dom';
+import { FiShoppingCart } from 'react-icons/fi';
+import { CgMenu, CgClose } from 'react-icons/cg';
 
 function Nav() {
   const [menuIcon, setMenuIcon] = useState();
@@ -142,11 +142,11 @@ function Nav() {
   return (
     <>
       <Nav>
-        <div className={menuIcon ? "navbar active" : "navbar"}>
+        <div className={menuIcon ? 'navbar active' : 'navbar'}>
           <ul className="navbar-lists">
             <li>
               <NavLink
-                to={"/"}
+                to={'/'}
                 className="navbar-link "
                 onClick={() => setMenuIcon(false)}
               >
@@ -181,7 +181,10 @@ function Nav() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/cart" className="navbar-link cart-trolley--link">
+              <NavLink
+                to="/cart"
+                className="navbar-link cart-trolley--link"
+              >
                 <FiShoppingCart className="cart-trolley" />
                 <span className="cart-total--item"> 10 </span>
               </NavLink>

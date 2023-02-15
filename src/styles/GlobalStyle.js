@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -18,7 +18,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
    scrollbar-color: rgb(98 84 243);
     scrollbar-width: thin;
 }
@@ -82,7 +81,7 @@ li {
 }
 
 
-${"" /* resuable code section  */}
+${'' /* resuable code section  */}
 
 .container {
   max-width: 120rem;
